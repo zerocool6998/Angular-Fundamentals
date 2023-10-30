@@ -1,0 +1,38 @@
+<!-- <div class="col">
+    <p>Your team is {{selectedTeam}} using change event</p>
+    <select #teams (change)="onSelected(teams.value)">
+        <option default>Pick a Team</option>
+        <option>Lakers</option>
+        <option>Miami</option>
+        <option>Cleavlend</option>
+    </select>
+</div> -->
+
+<!-- <div class="col">
+    <p>Your team is {{selectedTeam}} using viewChild</p>
+    <select #teams (change)="onSelected2()">
+        <option default>Pick a Team</option>
+        <option>Lakers</option>
+        <option>Miami</option>
+        <option>Cleavlend</option>
+    </select>
+</div> -->
+
+<div class="col">
+    <nav>
+        <ul>
+            <li><a routerLink="/DropdownMenu/childa">Child A</a></li>
+            <li><a routerLink="/DropdownMenu/childb">Child B</a></li>
+        </ul>
+    </nav>
+
+    <router-outlet></router-outlet>
+
+    <p>Your team is {{selectedTeam}} using ngModel</p>
+    <select [(ngModel)]="selectedTeam">
+        <option default>Pick a Team</option>
+        <option>Lakers</option>
+        <option>Miami</option>
+        <option>Cleavlend</option>
+    </select>
+</div>
