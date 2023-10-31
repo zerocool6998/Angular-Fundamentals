@@ -11,6 +11,7 @@ import { FormEditorComponent } from './form-editor/form-editor.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { DropdownMenuResultComponent } from './dropdown-menu-result/dropdown-menu-result.component';
 import { RouterModule } from '@angular/router';
+import { CatalogComponent } from './catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RouterModule } from '@angular/router';
     ProfileEditorComponent,
     FormEditorComponent,
     SizerComponent,
-    DropdownMenuResultComponent
+    DropdownMenuResultComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
