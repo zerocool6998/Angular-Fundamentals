@@ -11,7 +11,8 @@ import { FormEditorComponent } from './form-editor/form-editor.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { DropdownMenuResultComponent } from './dropdown-menu-result/dropdown-menu-result.component';
 import { RouterModule } from '@angular/router';
-import { CatalogComponent } from './catalog/catalog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostListComponent } from './post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +23,15 @@ import { CatalogComponent } from './catalog/catalog.component';
     FormEditorComponent,
     SizerComponent,
     DropdownMenuResultComponent,
-    CatalogComponent
+    PostListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

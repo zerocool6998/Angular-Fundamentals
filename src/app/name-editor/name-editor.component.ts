@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CartService } from '../cart.service';
+import { CartService } from '../cart-service/cart.service';
 
 @Component({
   selector: 'app-name-editor',
