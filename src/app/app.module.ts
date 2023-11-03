@@ -13,6 +13,7 @@ import { DropdownMenuResultComponent } from './dropdown-menu-result/dropdown-men
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { PostListComponent } from './post-list/post-list.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PostListComponent } from './post-list/post-list.component';
     SizerComponent,
     DropdownMenuResultComponent,
     PostListComponent,
+    CreatePostComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import { PostListComponent } from './post-list/post-list.component';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
